@@ -1,7 +1,11 @@
 function esFechaValida(fecha) {
   // Verifica si el argumento es un objeto Date
-  if (!(fecha instanceof Date)) return false;
 
+  if (fecha.toString() === "Invalid Date") return false;
+  if (!(fecha instanceof Date)) return false;
+  return true;
+
+  /*
   // Extrae los componentes de la fecha
   const anio = fecha.getFullYear();
   const mes = fecha.getMonth() + 1; // Sumamos 1 porque los meses comienzan desde 0
@@ -14,6 +18,7 @@ function esFechaValida(fecha) {
     mes >= 1 && mes <= 12 && // Meses válidos
     dia >= 1 && dia <= diaMaximoMes// Días válidos
   );
+  */
 }
 
 module.exports = esFechaValida;

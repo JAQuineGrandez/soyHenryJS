@@ -9,3 +9,8 @@ function esNumeroEntero(numero) {
 
 
 module.exports = esNumeroEntero;
+
+/*
+  Number.isInteger(numero)
+  numero % 1 === 0
+*/

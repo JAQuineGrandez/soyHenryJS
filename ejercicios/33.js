@@ -6,7 +6,11 @@ function esNumeroPrimo(numero) {
   // IMPORTANTE: Recuerda que un número primo es aquel que
   // solo es divisible por sí mismo y por 1.
   // Tu código:
-
+ 
+  if(numero==1 || numero==2){
+    return true;
+  }
+  
   for (let i = 2; i < numero; i++) {
     if (numero % i === 0) {
       return false;
