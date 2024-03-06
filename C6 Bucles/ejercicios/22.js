@@ -17,7 +17,11 @@ function combine(str1, str2, str3) {
   );
 
   for (let i = 0; i < maxLength; i++) {
-    if (i < cadenaUno.length) {
+    if (cadenaUno[i]) output += cadenaUno[i];
+    if (cadenaDos[i]) output += cadenaDos[i];
+    if (cadenaTres[i]) output += cadenaTres[i];
+
+    /*  if (i < cadenaUno.length) {
       output += cadenaUno[i];
     }
     if (i < cadenaDos.length) {
@@ -25,7 +29,7 @@ function combine(str1, str2, str3) {
     }
     if (i < cadenaTres.length) {
       output += cadenaTres[i];
-    }
+    } */
   }
 
   return output;
