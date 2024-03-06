@@ -10,16 +10,12 @@ function combine(str1, str2, str3) {
   // combine("abc", "12345", "67") == "a16b27c345"
 
   let output = "";
-  const maxLength = Math.max(
-    cadenaUno.length,
-    cadenaDos.length,
-    cadenaTres.length
-  );
+  const maxLength = Math.max(str1.length, str2.length, str3.length);
 
   for (let i = 0; i < maxLength; i++) {
-    if (cadenaUno[i]) output += cadenaUno[i];
-    if (cadenaDos[i]) output += cadenaDos[i];
-    if (cadenaTres[i]) output += cadenaTres[i];
+    if (str1[i]) output += str1[i];
+    if (str2[i]) output += str2[i];
+    if (str3[i]) output += str3[i];
 
     /*  if (i < cadenaUno.length) {
       output += cadenaUno[i];
