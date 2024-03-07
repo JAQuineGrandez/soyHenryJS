@@ -14,6 +14,8 @@ function contarParesConContinue(numeros) {
   }
 
   return pares;
+
+  // return numeros.filter((num) => num % 2 === 0).length;
 }
 
 module.exports = contarParesConContinue;
