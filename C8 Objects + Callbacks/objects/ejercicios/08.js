@@ -6,7 +6,7 @@ function crearGato(nombre, edad) {
   // Retornar el objeto.
   // Tu código:
   let objeto = {
-    nombre: nombre,
+    nombre: nombre, //nombre, edad
     edad: edad,
     meow: function () {
       return "Meow!";

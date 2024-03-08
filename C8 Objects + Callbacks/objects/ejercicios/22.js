@@ -7,7 +7,7 @@ function esAnagrama(str1, str2) {
   // Tu código:
 
   // Convertir ambas palabras a minúsculas y eliminar los espacios en blanco
-  const palabra1 = str1.toLowerCase().replace(/\s/g, "");
+  /* const palabra1 = str1.toLowerCase().replace(/\s/g, "");
   const palabra2 = str2.toLowerCase().replace(/\s/g, "");
 
   // Verificar si las palabras tienen la misma longitud
@@ -34,7 +34,12 @@ function esAnagrama(str1, str2) {
     }
   }
 
-  return true;
+  return true; */
+
+  var str1Ord = str1.toLowerCase().split("").sort().join("");
+  var str2Ord = str2.toLowerCase().split("").sort().join("");
+
+  return str1Ord === str2Ord;
 }
 
 module.exports = esAnagrama;

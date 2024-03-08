@@ -3,7 +3,7 @@ function verificarPassword(objetoUsuario, password) {
   // En ese caso, retorna true. Caso contrario, false.
   // Tu código:
 
-  return objetoUsuario["password"] === password;
+  return objetoUsuario["password"] === password; //objetoUsuario.password === password
 }
 
 module.exports = verificarPassword;

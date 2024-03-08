@@ -8,7 +8,7 @@ function sort(sortBy, list) {
   // retorna --> [{ a: 3, b: 2 }, { a: 2, b: 40 }, { a: 1, b: 3 }]
   // Tu código:
 
-  return list.sort((a, b) => {
+  /* return list.sort((a, b) => {
     if (a[sortBy] < b[sortBy]) {
       return 1;
     }
@@ -16,7 +16,9 @@ function sort(sortBy, list) {
       return -1;
     }
     return 0;
-  });
+  }); */
+
+  return list.sort((a, b) => b[sortBy] - a[sortBy]);
 }
 
 module.exports = sort;

@@ -10,6 +10,11 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
   }
 
   return objetoMuchosUsuarios;
+
+  // return objetoMuchosUsuarios.map((usuario) => {
+  //   usuario.esPremium = true;
+  //   return usuario;
+  // });
 }
 
 module.exports = pasarUsuarioAPremium;

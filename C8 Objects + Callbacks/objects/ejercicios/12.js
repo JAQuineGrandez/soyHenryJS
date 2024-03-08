@@ -3,9 +3,11 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Debes multiplicar este número por 5 y retornar el resultado.
   // Tu código:
 
-  objetoMisterioso["numeroMisterioso"] =
+  /*  objetoMisterioso["numeroMisterioso"] =
     objetoMisterioso["numeroMisterioso"] * 5;
-  return objetoMisterioso["numeroMisterioso"];
+  return objetoMisterioso["numeroMisterioso"]; */
+
+  return objetoMisterioso.numeroMisterioso * 5;
 }
 
 module.exports = multiplicarNumeroDesconocidoPorCinco;
