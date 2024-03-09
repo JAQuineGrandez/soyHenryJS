@@ -9,6 +9,8 @@ function cambiarCadena(string, callback) {
   }
 
   return callback(string);
+
+  //return typeof callback === "function" ? callback(string) : string;
 }
 
 module.exports = cambiarCadena;
